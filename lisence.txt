@@ -9,6 +9,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
+Permission is hearby granted, free of charge, to any peson obtaining a copy of software and associated documentation files/software to deatl in the software without restrictios, including without limitation the rights to use, copym modify, merge, publish, distributem sublisence, and/or sell copies of the softwarem and to permit persons to whom the softwarre is firnished to do so, sibjets to thefollowing conditions
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
