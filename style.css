@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{margin:0;padding:0;}
+
+body {
+  background:#f0f0f0;
+  font-family:montserrat, arial;
+}
+
+/* MultiStep Form */
+#msform {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  width: 100%;
+  position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.action-button {
+  width: 100px;
+  padding:10px;
+  border:0;
+  background:#ee0979;
+  color:white;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+.action-button-previous {
+  background:#bbb;
+}
+
+#progressbar {
+  margin-bottom: 20px;
+  display:flex;
+  justify-content: space-between;
+  counter-reset: step;
+}
+
+#progressbar li {
+  list-style:none;
+  color:#777;
+  text-transform:uppercase;
+  font-size:10px;
+  position:relative;
+  flex:1;
+}
+
+#progressbar li:before {
+  counter-increment: step;
+  content: counter(step);
+  width: 25px;
+  height:25px;
+  display:block;
+  background:white;
+  border-radius:50%;
+  margin:auto;
+  margin-bottom:5px;
+  line-height:25px;
+}
+
+#progressbar li.active:before {
+  background:#ee0979;
+  color:white;
+}
+
+#card-preview {
+  width: 350px;
+  height: 550px;
+  margin:30px auto;
+  background-image:url('bg.png');
+  background-size:cover;
+  background-position:center;
+  border:2px solid #222;
+  border-radius:10px;
+  position:relative;
+}
+
+.text-field {
+  position:absolute;
+  left:40px;
+  font-size:16px;
+  font-weight:bold;
+}
+
+#t-name {
+  color:red;
+  font-size:22px;
+  font-weight:900;
+  width:100%;
+  left:0;
+  text-align:center;
+  -webkit-text-stroke:1.5px white;
+}
+
+.blue-glow {
+  text-shadow:0 0 6px #66b3ff, 0 0 10px #3399ff;
+}
+
+.green-white-shadow {
+  color: green;
+  text-shadow:0 0 5px white;
+}
+
+#photo {
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background:#ddd;
+  position:absolute;
+  top:170px;
+  left:100px;
+  overflow:hidden;
+}
+
+#photo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
